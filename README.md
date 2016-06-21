@@ -16,18 +16,15 @@ $ casperjs --version
 
 ## What the script do
 - Add what you want to buy to the cart.
-- Proceed to checkout. No, you cannot update the quantity.
+- Proceed to checkout.
 - Sign in to Amazon.co.jp
 - Check the checkbox to say you are over 20 years old 
 - Place your order. 
 
 ## What doesn't(future tasks)
-- Use encrypted credentials.
-  The script deal with the user credentials for Amazon.co.jp as hard-coded parameter values. Yes, your credentials will be on the *.js file. I know it's terrible...
-- Refer credentials from an external file or something.
-  Same as above.
-- Throw exceptions.
-  If something unexpected like a pop-up says "Would you like to try Amazon Prime?" happened, the script doesn't work correctly and throw any error messages. Just hung-up or time-out.
+- **Use encrypted credentials**: The script deal with the user credentials for Amazon.co.jp as hard-coded parameter values. Yes, your credentials will be on the *.js file. I know it's terrible...
+- **Refer credentials from an external file or something**: Same as above.
+- **Throw exceptions**: If something unexpected like a pop-up says "Would you like to try Amazon Prime?" happened, the script doesn't work correctly and throw any error messages. Just hung-up or time-out.
 
 ## Author
 Alice MAKAIMURA
