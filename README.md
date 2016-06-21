@@ -25,6 +25,9 @@ $ casperjs --version
 - **Use encrypted credentials**: The script deal with the user credentials for Amazon.co.jp as hard-coded parameter values. Yes, your credentials will be on the *.js file. I know it's terrible...
 - **Refer credentials from an external file or something**: Same as above.
 - **Throw exceptions**: If something unexpected like a pop-up says "Would you like to try Amazon Prime?" happened, the script doesn't work correctly and throw any error messages. Just hung-up or time-out.
+- **Change shipping address**
+- **Use a coupon code**
+- **Choose the express delivery or delivery date**
 
 ## Author
 Alice MAKAIMURA
