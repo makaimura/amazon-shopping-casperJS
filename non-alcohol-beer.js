@@ -4,7 +4,8 @@ var casper = require('casper').create({
         loadImages: false,
         loadPlugins: false
     },
-    logLevel: "debug",
+//    logLevel: "debug",
+    waitTimeout: 30000,
     verbose: true
 });
 
@@ -33,22 +34,26 @@ casper.then(function(){
 
 // Signin with filling Email address and password in the form.
 casper.then(function(){
-  this.fillSelectors('form[name="signIn"]', {
-    'input[name="email"]': 'YOUR EMAIL ADDRESS',
-    'input[name="password"]': 'YOUR PASSWORD'
-  }, true);
-  this.wait(2000);
+  this.sendKeys("input[name='email']", "YOUR EMAIL ADDRESS");  
 });
 
 casper.then(function(){
-  this.fillSelectors('form[name="spc"]', {
-    'input[name="wineNotice"]': true
+  this.sendKeys("input[name='password']", "YOUR PASSWORD");
+});
+
+casper.then(function(){
+  this.click("form[name='signIn'] input#signInSubmit");
+});
+
+casper.then(function(){
+  this.waitForSelector("input[name='wineNotice']", function(){
+    this.click("input[name='wineNotice']");
   });
-  this.wait(1000);
 });
 
-casper.then(function(){
-  this.click('input[type="submit"][name="PlaceYourOrder1"]');
+casper.waitForSelector("input[name='placeYourOrder1']", function success(){
+  this.click('input[name="placeYourOrder1"]');
 });
-  
+
+
 casper.run();
