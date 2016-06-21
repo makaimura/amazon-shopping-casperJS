@@ -1,5 +1,5 @@
 ## Buy an alcoholic beverage on Amazon with CasperJS
-This script performs the same behabiors as you buy something on Amazon with a browser.
+This script performs the same behaviors as you buy something on Amazon with a browser.
 
 ## Prerequisites
 This script requires PhantomJS and CasperJS. And you need to know about the URL of what you want to buy on Amazon like this: https://www.amazon.co.jp/gp/product/B0054X4H0M/.
