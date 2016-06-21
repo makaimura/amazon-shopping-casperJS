@@ -32,25 +32,29 @@ casper.then(function(){
     this.click('#hlb-ptc-btn-native');
 });
 
-// Signin with filling Email address and password in the form.
+// Signin with filling Email address...
 casper.then(function(){
   this.sendKeys("input[name='email']", "YOUR EMAIL ADDRESS");  
 });
 
+// Password...
 casper.then(function(){
   this.sendKeys("input[name='password']", "YOUR PASSWORD");
 });
 
+// And click the button "Sign In"
 casper.then(function(){
   this.click("form[name='signIn'] input#signInSubmit");
 });
 
+// You are ordering a non-alcohol beer, but you need to check the checkbox which is a kind of age verification, in case of Japan, you are over 20 years old.
 casper.then(function(){
   this.waitForSelector("input[name='wineNotice']", function(){
     this.click("input[name='wineNotice']");
   });
 });
 
+// Place your order.
 casper.waitForSelector("input[name='placeYourOrder1']", function success(){
   this.click('input[name="placeYourOrder1"]');
 });
