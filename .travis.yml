@@ -9,4 +9,4 @@ before_script:
   - export PATH=$PATH:$PWD/casperjs-1.1.1/bin/
 
 script:
- - casperjs test cow-test.js
+ - casperjs test googletesting.js
