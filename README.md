@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/makaimura/amazon-shopping-casperJS.svg?branch=master)](https://travis-ci.org/makaimura/amazon-shopping-casperJS)
+
 ## Buy an alcoholic beverage on Amazon with CasperJS
 This script performs the same behaviors as you buy something on Amazon with a browser.
 
