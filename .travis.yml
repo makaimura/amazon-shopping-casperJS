@@ -6,5 +6,5 @@ node_js:
 install: 
  - git clone git://github.com/casperjs/casperjs.git
 
-script
+script:
  - casperjs sample.js
