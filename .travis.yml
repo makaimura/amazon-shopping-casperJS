@@ -8,3 +8,4 @@ install:
 
 script:
  - casperjs sample.js
+ - make test
